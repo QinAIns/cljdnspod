@@ -7,7 +7,14 @@ DNSPOD的Clojure版本，每隔10分钟动态修改域名的ip。
 
 2. 修改src/cljdnspod/config.clj里边的相关配置
 
-3. 之后在命令行下执行：lein run
+3. 之后在命令行下执行：
+
+    lein run
+
+或者用java运行
+
+    lein uberjar
+    java -cp target\cljdnspod-0.1.0-standalone.jar clojure.main -m cljdnspod.core
 
 ## License
 
